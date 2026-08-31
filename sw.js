@@ -1,7 +1,7 @@
 // История мира - service worker
 // Сеть в приоритете для самой страницы: обновление сайта видно сразу,
 // кэш используется только когда сети нет.
-const CACHE = 'istoriya-mira-v10';
+const CACHE = 'istoriya-mira-v11';
 const SHELL = [
   './',
   './index.html',
