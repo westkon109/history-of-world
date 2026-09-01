@@ -1,4 +1,8 @@
-[[headers]]
+[build]
+  base = "."
+  command = "echo 'Deploying'"
+  publish = "."
+  [[headers]]
   for = "/sw.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
