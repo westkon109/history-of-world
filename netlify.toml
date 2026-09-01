@@ -1,7 +1,3 @@
-[build]
-  base = "."
-  command = "echo 'Deploying'"
-  publish = "."
   [[headers]]
   for = "/sw.js"
   [headers.values]
