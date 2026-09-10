@@ -1,6 +1,6 @@
 {
-  "name": "History of the world",
-  "short_name": "World history",
+  "name": "History of the World",
+  "short_name": "History of the World",
   "description": "Illustrated world history, period by period. Five languages: English, Spanish, French, German, Russian.",
   "start_url": "./index.html",
   "scope": "./",
