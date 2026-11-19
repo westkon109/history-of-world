@@ -31,7 +31,7 @@
   <h1>Privacy Policy</h1>
   <p class="meta">
     Application: History of the World (package <code>app.vercel.history_of_world.twa</code>)<br>
-    Effective date: 4 September 2026 · Last updated: 16 October 2026<br>
+    Effective date: 4 September 2026 · Last updated: 19 November 2026<br>
     Developer / data controller: Andrei Kondrashin, individual developer<br>
     Contact e-mail: <a href="mailto:info@artgroupproject.com">info@artgroupproject.com</a>
   </p>
@@ -90,6 +90,7 @@
   </table>
   <p>Ads can be closed and are clearly separated from the App's content.</p>
   <p>To deliver ads, measure them and prevent fraud, the Google Mobile Ads SDK collects the following data directly from your device, according to Google's disclosure for developers: <strong>IP address</strong> (from which an approximate location can be derived); <strong>product interactions</strong> (for example app launches, taps and video views); <strong>diagnostic information</strong> (for example app performance and crash data); and <strong>device identifiers</strong> (the Android advertising ID — not for users under 13 — and the app set ID). Google uses this data for advertising, analytics and fraud prevention; it is encrypted in transit. The processing is carried out by Google under its own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+  <p><strong>Approximate location.</strong> Newer versions of the Google Mobile Ads SDK may collect approximate location data, but only from apps that request and access the device's location. This App does not request location permission (see section 8), so no location data is collected from your device through the App for this purpose. If a future version of the App changes this, the Policy will be updated in advance and your consent will be requested inside the App before any such collection starts.</p>
 
   <h2>6. Advertising and purchase in the Amazon Appstore version (1.8.0 and later)</h2>
   <p>The Amazon version shows ads from <strong>Liftoff Monetize</strong> (the Vungle SDK, operated by Vungle, Inc. / Liftoff Mobile, Inc.) after some quiz sessions. Before ads are shown, the App asks for your consent to personalized advertising; if you decline, only non-personalized ads are shown.</p>
@@ -107,7 +108,9 @@
   <table>
     <tr><th>Permission</th><th>Versions</th><th>Why</th></tr>
     <tr><td><code>android.permission.INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Google Play 1.8.0+, Amazon</td><td>Only to load ads. All App content is stored inside the App and works offline.</td></tr>
-    <tr><td><code>com.google.android.gms.permission.AD_ID</code> and related advertising permissions added by the Google Mobile Ads SDK</td><td>Google Play 1.8.0+</td><td>Access to the Android advertising ID for ads to users aged 16 and over. The advertising ID is not sent for users under 13.</td></tr>
+    <tr><td><code>com.google.android.gms.permission.AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code></td><td>Google Play 1.8.0+</td><td>Advertising APIs added by the Google Mobile Ads SDK: the advertising ID (for users aged 16 and over; not sent for users under 13) and the Android Privacy Sandbox ad-measurement and ad-topic APIs. None of them gives access to your location.</td></tr>
+    <tr><td><code>com.android.vending.CHECK_LICENSE</code></td><td>Google Play version</td><td>Google Play licence check, which confirms that the App was installed from Google Play.</td></tr>
+    <tr><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Google Play version</td><td>Technical system permissions merged into the App by its libraries. They do not give access to personal data or location.</td></tr>
   </table>
   <p>The App does not request access to location, camera, microphone, storage, contacts, telephone, SMS, calendar or any other sensitive permission. External links you choose to open (for example, the store page for rating the App) open in other apps and are governed by their own privacy policies.</p>
 
